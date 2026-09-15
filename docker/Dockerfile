@@ -8,7 +8,7 @@ FROM php:8.1.1-apache
 # tournent en tant que root dans le conteneur. Voir Cours OWASP - A05.
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-        libzip-dev unzip git \
+        libzip-dev unzip \
     && docker-php-ext-install pdo_mysql \
     && a2enmod rewrite headers \
     && rm -rf /var/lib/apt/lists/*
