@@ -31,9 +31,3 @@ symfony serve   # ou : php -S 127.0.0.1:8000 -t public
 
 Comptes de démonstration : `admin@poc-owasp.local` / `admin`, `alice@poc-owasp.local` / `alice123`.
 
-## Documentation pédagogique complète
-
-Voir le cours Obsidian *"Cours Trivy - Analyse de CVE"*, fichier
-`TP/TP 3 - PoC Symfony OWASP - Scanner et documenter une application vulnérable.md`, pour :
-la présentation technique détaillée, les instructions de scan Trivy, la démarche d'exploration
-OWASP Top 10, et la méthode de catégorisation CVE/CVSS attendue.
