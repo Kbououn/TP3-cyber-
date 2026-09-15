@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+{% block title %}A02 - Vérifier un JWT{% endblock %}
+{% block body %}
+    <span class="cat">OWASP A02:2021 - Cryptographic Failures</span>
+    <h1>Vérifier un jeton JWT</h1>
+    <form method="get">
+        <div>Jeton<br><textarea name="token" rows="3" style="width:100%">{{ token }}</textarea></div>
+        <button type="submit">Vérifier</button>
+    </form>
+    {% if error %}<div class="warn">Refusé : {{ error }}</div>{% endif %}
+    {% if decoded %}
+        <p>Jeton valide, contenu décodé :</p>
+        <pre>{{ decoded|json_encode(constant('JSON_PRETTY_PRINT')) }}</pre>
+    {% endif %}
+{% endblock %}

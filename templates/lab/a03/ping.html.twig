@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+{% block title %}A03 - Ping{% endblock %}
+{% block body %}
+    <span class="cat">OWASP A03:2021 - Injection (commande OS)</span>
+    <h1>Diagnostic réseau</h1>
+    <form method="get">
+        <div>Hôte à tester<br><input type="text" name="host" value="{{ host }}"></div>
+        <button type="submit">Ping</button>
+    </form>
+    {% if output %}
+        <pre>{{ output }}</pre>
+    {% endif %}
+{% endblock %}

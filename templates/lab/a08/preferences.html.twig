@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+{% block title %}A08 - Préférences{% endblock %}
+{% block body %}
+    <span class="cat">OWASP A08:2021 - Software and Data Integrity Failures</span>
+    <h1>Préférences (désérialisation non sûre)</h1>
+    <form method="post">
+        <div>Thème
+            <select name="theme"><option>light</option><option>dark</option></select>
+        </div>
+        <div>Langue
+            <select name="language"><option>fr</option><option>en</option></select>
+        </div>
+        <button type="submit">Enregistrer</button>
+    </form>
+    {% if prefs %}
+        <p>Préférences relues (via <code>unserialize()</code> du cookie <code>prefs</code>) :</p>
+        <pre>{{ prefs|json_encode }}</pre>
+    {% endif %}
+    <p><a href="{{ path('lab_a08_upload') }}">Voir la démo d'upload de fichier sans validation →</a></p>
+{% endblock %}

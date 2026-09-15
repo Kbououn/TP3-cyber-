@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+{% block title %}A08 - Upload{% endblock %}
+{% block body %}
+    <span class="cat">OWASP A08:2021 - Software and Data Integrity Failures</span>
+    <h1>Dépôt de document</h1>
+    <p>Aucune vérification d'extension ni de type MIME. Le fichier est stocké dans <code>public/uploads/</code>, directement accessible depuis le web.</p>
+    <form method="post" enctype="multipart/form-data">
+        <div><input type="file" name="document"></div>
+        <button type="submit">Envoyer</button>
+    </form>
+    {% if uploadedPath %}
+        <p>Fichier déposé : <a href="{{ uploadedPath }}" target="_blank">{{ uploadedPath }}</a></p>
+    {% endif %}
+{% endblock %}

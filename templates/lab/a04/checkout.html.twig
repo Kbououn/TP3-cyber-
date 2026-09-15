@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+{% block title %}A04 - Checkout{% endblock %}
+{% block body %}
+    <span class="cat">OWASP A04:2021 - Insecure Design</span>
+    <h1>Commander</h1>
+    <form method="post">
+        <div>
+            Produit<br>
+            <select name="product_id" id="product_id">
+                {% for id, p in catalog %}
+                    <option value="{{ id }}" data-price="{{ p.price }}">{{ p.label }} — {{ p.price }} €</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div>Prix à débiter (champ caché normalement, ici visible pour la démo)<br>
+            <input type="number" step="0.01" name="price" id="price" value="{{ catalog|first.price }}">
+        </div>
+        <button type="submit">Valider la commande</button>
+    </form>
+    <p class="warn">Le prix envoyé par le formulaire est utilisé tel quel : aucun recalcul côté serveur à partir du catalogue.</p>
+    {% if confirmation %}
+        <p>Commande enregistrée : <strong>{{ confirmation.product }}</strong> pour <strong>{{ confirmation.price }} €</strong>.</p>
+    {% endif %}
+    <script>
+        document.getElementById('product_id').addEventListener('change', function () {
+            document.getElementById('price').value = this.selectedOptions[0].dataset.price;
+        });
+    </script>
+{% endblock %}

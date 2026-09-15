@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+{% block title %}Inscription{% endblock %}
+{% block body %}
+    <h1>Créer un compte</h1>
+    <form method="post">
+        <div>Email<br><input type="email" name="email"></div>
+        <div>Mot de passe (aucune règle de complexité imposée)<br><input type="password" name="password"></div>
+        <div>Réponse à la question secrète "Quel est le nom de votre animal ?"<br><input type="text" name="security_answer"></div>
+        <button type="submit">S'inscrire</button>
+    </form>
+{% endblock %}

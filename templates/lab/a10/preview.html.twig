@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+{% block title %}A10 - SSRF{% endblock %}
+{% block body %}
+    <span class="cat">OWASP A10:2021 - Server-Side Request Forgery</span>
+    <h1>Aperçu de lien</h1>
+    <form method="get">
+        <div>URL à prévisualiser<br><input type="text" name="url" value="{{ url }}" style="width:100%"></div>
+        <button type="submit">Prévisualiser</button>
+    </form>
+    {% if error %}<div class="warn">Erreur : {{ error }}</div>{% endif %}
+    {% if status %}
+        <p>Statut HTTP : {{ status }}</p>
+        <pre>{{ body }}</pre>
+    {% endif %}
+    <p class="warn">Essayez une URL interne au réseau Docker, par exemple <code>http://db:3306</code>.</p>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+{% block title %}A03 - Commentaires{% endblock %}
+{% block body %}
+    <span class="cat">OWASP A03:2021 - Injection (XSS stockée)</span>
+    <h1>Commentaires</h1>
+    <p>Formulaire sans jeton CSRF, contenu affiché avec le filtre Twig <code>|raw</code> (aucun échappement).</p>
+    <form method="post">
+        <div>Pseudo<br><input type="text" name="author"></div>
+        <div>Commentaire (HTML autorisé)<br><textarea name="content" rows="3" style="width:100%"></textarea></div>
+        <button type="submit">Publier</button>
+    </form>
+    {% for comment in comments %}
+        <div style="border-bottom:1px solid #eee; padding:8px 0;">
+            <strong>{{ comment.author }}</strong> —
+            <span>{{ comment.content|raw }}</span>
+        </div>
+    {% endfor %}
+{% endblock %}

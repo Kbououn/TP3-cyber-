@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+{% block title %}A01 - Factures{% endblock %}
+{% block body %}
+    <span class="cat">OWASP A01:2021 - Broken Access Control</span>
+    <h1>Liste des factures</h1>
+    <p>Cliquez sur une facture : aucune vérification n'est faite pour savoir si elle vous appartient (IDOR).</p>
+    <table>
+        <tr><th>ID</th><th>Libellé</th><th>Propriétaire</th></tr>
+        {% for invoice in invoices %}
+            <tr>
+                <td><a href="{{ path('lab_a01_invoice_show', {id: invoice.id}) }}">{{ invoice.id }}</a></td>
+                <td>{{ invoice.label }}</td>
+                <td>{{ invoice.owner.email }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    <p><a href="{{ path('lab_a01_admin') }}">Accéder au panneau "admin" →</a></p>
+{% endblock %}

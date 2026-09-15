@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+{% block title %}A09 - Logging{% endblock %}
+{% block body %}
+    <span class="cat">OWASP A09:2021 - Security Logging and Monitoring Failures</span>
+    <h1>Journal applicatif (exposé publiquement)</h1>
+    <p>Fichier : <code>{{ logFile }}</code>. Provoquez d'abord quelques échecs de connexion sur
+        <a href="{{ path('app_login') }}">/login</a>, puis rechargez cette page.</p>
+    <pre>{% for line in lines %}{{ line }}
+{% endfor %}</pre>
+{% endblock %}

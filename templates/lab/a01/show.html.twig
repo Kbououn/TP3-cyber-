@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+{% block title %}Facture #{{ invoice.id }}{% endblock %}
+{% block body %}
+    <span class="cat">OWASP A01:2021 - Broken Access Control</span>
+    <h1>Facture #{{ invoice.id }}</h1>
+    <table>
+        <tr><th>Propriétaire</th><td>{{ invoice.owner.email }}</td></tr>
+        <tr><th>Libellé</th><td>{{ invoice.label }}</td></tr>
+        <tr><th>Montant</th><td>{{ invoice.amount }} €</td></tr>
+        <tr><th>Contenu</th><td>{{ invoice.content }}</td></tr>
+    </table>
+    <p><a href="{{ path('lab_a01_invoices') }}">← Retour à la liste</a></p>
+{% endblock %}

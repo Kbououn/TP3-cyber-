@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}PoC Symfony OWASP{% endblock %}</title>
+    {% block stylesheets %}
+    <style>
+        :root { color-scheme: light; }
+        body { font-family: system-ui, sans-serif; margin: 0; background: #f4f5f7; color: #1c1e21; }
+        header.banner { background: #7a1f1f; color: #fff; padding: 10px 20px; font-size: 14px; }
+        nav.topnav { background: #1c1e21; padding: 10px 20px; display: flex; flex-wrap: wrap; gap: 12px; }
+        nav.topnav a { color: #eee; text-decoration: none; font-size: 14px; }
+        nav.topnav a:hover { text-decoration: underline; }
+        main { max-width: 900px; margin: 24px auto; background: #fff; padding: 24px 32px; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+        h1 { margin-top: 0; }
+        table { border-collapse: collapse; width: 100%; margin: 12px 0; }
+        th, td { border: 1px solid #ddd; padding: 6px 10px; text-align: left; font-size: 14px; }
+        th { background: #f0f0f0; }
+        .cat { display: inline-block; background: #eee; border-radius: 4px; padding: 2px 8px; font-size: 12px; margin-bottom: 8px; }
+        .warn { background: #fff3cd; border: 1px solid #ffe69c; padding: 10px 14px; border-radius: 4px; margin: 12px 0; font-size: 14px; }
+        code, pre { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 13px; }
+        pre { padding: 10px; overflow-x: auto; }
+        input, textarea, select, button { font-size: 14px; padding: 6px 8px; margin: 4px 0; }
+        form { margin: 12px 0; }
+        .lab-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .lab-card { border: 1px solid #ddd; border-radius: 6px; padding: 12px 14px; }
+        .lab-card a { font-weight: 600; }
+        footer { text-align: center; font-size: 12px; color: #777; margin: 30px 0; }
+    </style>
+    {% endblock %}
+</head>
+<body>
+<header class="banner">
+    ⚠️ PoC pédagogique volontairement vulnérable — usage local uniquement, ne jamais exposer sur Internet.
+</header>
+<nav class="topnav">
+    <a href="{{ path('app_home') }}">Accueil</a>
+    <a href="{{ path('app_login') }}">Connexion</a>
+    <a href="{{ path('app_register') }}">Inscription</a>
+    <a href="{{ path('lab_a01_invoices') }}">A01 Access Control</a>
+    <a href="{{ path('lab_a02_index') }}">A02 Crypto</a>
+    <a href="{{ path('lab_a03_search') }}">A03 Injection</a>
+    <a href="{{ path('lab_a04_checkout') }}">A04 Insecure Design</a>
+    <a href="{{ path('lab_a05_index') }}">A05 Misconfig</a>
+    <a href="{{ path('lab_a06_index') }}">A06 Outdated Components</a>
+    <a href="{{ path('lab_a07_index') }}">A07 Auth Failures</a>
+    <a href="{{ path('lab_a08_preferences') }}">A08 Integrity</a>
+    <a href="{{ path('lab_a09_index') }}">A09 Logging</a>
+    <a href="{{ path('lab_a10_preview') }}">A10 SSRF</a>
+    <a href="/_profiler" target="_blank">Profiler</a>
+</nav>
+<main>
+    {% block body %}{% endblock %}
+</main>
+<footer>poc-symfony-owasp-cve — support de TP BTS SIO — Cours Trivy / OWASP</footer>
+</body>
+</html>

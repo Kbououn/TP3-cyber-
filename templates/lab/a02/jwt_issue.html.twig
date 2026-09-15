@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+{% block title %}A02 - Emettre un JWT{% endblock %}
+{% block body %}
+    <span class="cat">OWASP A02:2021 - Cryptographic Failures</span>
+    <h1>Emettre un jeton JWT</h1>
+    <form method="get">
+        <div>Email<br><input type="email" name="email" value="{{ email }}"></div>
+        <button type="submit">Emettre</button>
+    </form>
+    {% if token %}
+        <p>Jeton émis pour <strong>{{ user.email }}</strong> (rôles : {{ user.roles|join(', ') }}), <strong>sans expiration</strong> :</p>
+        <pre>{{ token }}</pre>
+        <p><a href="{{ path('lab_a02_jwt_verify', {token: token}) }}">Vérifier ce jeton →</a></p>
+    {% elseif email %}
+        <div class="warn">Aucun utilisateur trouvé pour {{ email }}.</div>
+    {% endif %}
+{% endblock %}

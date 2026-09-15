@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+{% block title %}A01 - Admin{% endblock %}
+{% block body %}
+    <span class="cat">OWASP A01:2021 - Broken Access Control</span>
+    <h1>Panneau d'administration</h1>
+    <div class="warn">
+        Cette page devrait être réservée au rôle <code>ROLE_ADMIN</code>. Elle ne vérifie en réalité
+        que la présence d'une session ouverte : n'importe quel utilisateur connecté peut y accéder.
+    </div>
+    <table>
+        <tr><th>ID</th><th>Email</th><th>Rôles</th><th>Hash mot de passe</th></tr>
+        {% for u in users %}
+            <tr><td>{{ u.id }}</td><td>{{ u.email }}</td><td>{{ u.roles|join(', ') }}</td><td>{{ u.password }}</td></tr>
+        {% endfor %}
+    </table>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+{% block title %}A02 - Cryptographic Failures{% endblock %}
+{% block body %}
+    <span class="cat">OWASP A02:2021 - Cryptographic Failures</span>
+    <h1>Défaillances cryptographiques</h1>
+    <p>Les mots de passe sont stockés en MD5 sans sel (voir la table ci-dessous, comparez avec le panneau admin A01) :</p>
+    <table>
+        <tr><th>Email</th><th>Hash stocké</th></tr>
+        {% for u in users %}
+            <tr><td>{{ u.email }}</td><td>{{ u.password }}</td></tr>
+        {% endfor %}
+    </table>
+    <p>
+        Démo de jetons JWT signés avec un secret faible codé en dur :
+        <a href="{{ path('lab_a02_jwt_issue') }}">émettre un jeton</a> ·
+        <a href="{{ path('lab_a02_jwt_verify') }}">vérifier un jeton</a>
+    </p>
+{% endblock %}

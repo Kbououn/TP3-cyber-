@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+{% block title %}A05 - Security Misconfiguration{% endblock %}
+{% block body %}
+    <span class="cat">OWASP A05:2021 - Security Misconfiguration</span>
+    <h1>Mauvaise configuration de sécurité</h1>
+    <table>
+        <tr><th>APP_ENV</th><td>{{ appEnv }}</td></tr>
+        <tr><th>APP_DEBUG</th><td>{{ appDebug }}</td></tr>
+    </table>
+    <ul>
+        <li><a href="{{ path('lab_a05_phpinfo') }}">phpinfo() public →</a></li>
+        <li><a href="/_profiler" target="_blank">Symfony Profiler (devrait être désactivé en production) →</a></li>
+        <li><a href="{{ path('lab_a05_api_users') }}">API JSON avec CORS <code>*</code> →</a></li>
+        <li>Voir <code>docker/Dockerfile</code> : aucune directive <code>USER</code>, le conteneur tourne en root.</li>
+    </ul>
+{% endblock %}

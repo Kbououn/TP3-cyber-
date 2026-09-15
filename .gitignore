@@ -1,0 +1,14 @@
+
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.php
+/.env.*.local
+/config/secrets/prod/prod.decrypt.private.php
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###
+
+# Fichiers déposés via le module A08 (upload sans validation) : à ne pas versionner.
+/public/uploads/*
+!/public/uploads/.gitkeep

@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+{% block title %}A07 - Auth Failures{% endblock %}
+{% block body %}
+    <span class="cat">OWASP A07:2021 - Identification and Authentication Failures</span>
+    <h1>Défaillances d'identification et d'authentification</h1>
+    <table>
+        <tr><th>ID de session actuel</th><td>{{ sessionId }}</td></tr>
+        <tr><th>user_id en session</th><td>{{ userId ?? '(non connecté)' }}</td></tr>
+        <tr><th>Cookie remember_token</th><td>{{ rememberToken ?? '(absent)' }}</td></tr>
+    </table>
+    <p>A tester :</p>
+    <ul>
+        <li>Se connecter puis observer que l'ID de session <strong>ne change pas</strong> (fixation de session).</li>
+        <li>Comparer les messages d'erreur sur <a href="{{ path('app_login') }}">/login</a> selon que l'email existe ou non (énumération de comptes).</li>
+        <li>Cocher "Se souvenir de moi" puis constater que <code>remember_token = md5(email)</code> : prévisible, sans expiration réaliste.</li>
+        <li>Enchaîner de nombreuses tentatives de connexion échouées : aucun blocage.</li>
+    </ul>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+{% block title %}Accueil - PoC OWASP{% endblock %}
+{% block body %}
+    <h1>PoC Symfony — OWASP Top 10 &amp; analyse de CVE</h1>
+    <p>
+        Cette application Symfony a été construite <strong>volontairement</strong> sans respecter les
+        bonnes pratiques de développement ni de cybersécurité, à des fins pédagogiques (BTS SIO).
+        Chaque module ci-dessous illustre une catégorie de l'<a href="https://owasp.org/Top10/" target="_blank">OWASP Top 10 (2021)</a>.
+    </p>
+    <div class="warn">
+        Comptes de démonstration : <code>admin@poc-owasp.local</code> / <code>admin</code>
+        et <code>alice@poc-owasp.local</code> / <code>alice123</code>.
+    </div>
+
+    <div class="lab-grid">
+        <div class="lab-card"><span class="cat">A01</span><br><a href="{{ path('lab_a01_invoices') }}">Broken Access Control</a><br>IDOR sur les factures, page admin non protégée par rôle.</div>
+        <div class="lab-card"><span class="cat">A02</span><br><a href="{{ path('lab_a02_index') }}">Cryptographic Failures</a><br>Mots de passe MD5, JWT signé avec un secret faible codé en dur.</div>
+        <div class="lab-card"><span class="cat">A03</span><br><a href="{{ path('lab_a03_search') }}">Injection</a><br>Injection SQL, XSS stockée, injection de commande.</div>
+        <div class="lab-card"><span class="cat">A04</span><br><a href="{{ path('lab_a04_checkout') }}">Insecure Design</a><br>Prix manipulable côté client, aucune anti-bruteforce sur /login.</div>
+        <div class="lab-card"><span class="cat">A05</span><br><a href="{{ path('lab_a05_index') }}">Security Misconfiguration</a><br>phpinfo() public, profiler exposé, CORS permissif.</div>
+        <div class="lab-card"><span class="cat">A06</span><br><a href="{{ path('lab_a06_index') }}">Vulnerable &amp; Outdated Components</a><br>Dépendances et image Docker volontairement anciennes.</div>
+        <div class="lab-card"><span class="cat">A07</span><br><a href="{{ path('lab_a07_index') }}">Identification &amp; Auth Failures</a><br>Pas de régénération de session, cookie "remember me" prévisible.</div>
+        <div class="lab-card"><span class="cat">A08</span><br><a href="{{ path('lab_a08_preferences') }}">Software &amp; Data Integrity Failures</a><br>Désérialisation non sûre, upload de fichier sans validation.</div>
+        <div class="lab-card"><span class="cat">A09</span><br><a href="{{ path('lab_a09_index') }}">Logging &amp; Monitoring Failures</a><br>Mots de passe en clair dans les logs, logs exposés publiquement.</div>
+        <div class="lab-card"><span class="cat">A10</span><br><a href="{{ path('lab_a10_preview') }}">Server-Side Request Forgery</a><br>Aperçu de lien qui va chercher n'importe quelle URL côté serveur.</div>
+    </div>
+{% endblock %}

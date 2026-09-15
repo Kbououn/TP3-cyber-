@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+{% block title %}A06 - Vulnerable and Outdated Components{% endblock %}
+{% block body %}
+    <span class="cat">OWASP A06:2021 - Vulnerable and Outdated Components</span>
+    <h1>Composants vulnérables et obsolètes</h1>
+    <p>
+        Cette catégorie ne se "visite" pas dans le navigateur : c'est l'ensemble des dépendances
+        déclarées dans <code>composer.json</code> / <code>composer.lock</code>, ainsi que l'image
+        Docker de base, qui sont volontairement anciennes.
+    </p>
+    <p>C'est la <strong>seule</strong> catégorie de ce TP que Trivy détecte automatiquement (analyse SCA) :</p>
+    <pre>trivy fs --scanners vuln .
+trivy image poc-symfony-owasp-cve:1.0</pre>
+    <p>
+        Toutes les autres routes <code>/lab/aXX</code> de cette application relèvent du <strong>SAST</strong>
+        (relecture de code) ou du <strong>DAST</strong> (tests de l'application en fonctionnement) :
+        Trivy, outil SCA, ne les détectera pas. C'est volontaire et fait partie de la leçon.
+    </p>
+{% endblock %}

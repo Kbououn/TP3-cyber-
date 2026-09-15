@@ -1,0 +1,47 @@
+# Pile complète (application + base de données + Adminer) pour l'exploration
+# "tout Docker" du PoC. Usage :
+#   docker compose -f docker-compose.yml up --build
+#
+# ATTENTION : ce PoC est volontairement vulnérable. Ne jamais publier ces
+# conteneurs sur un réseau autre que local/pédagogique.
+#
+# Ne pas lancer en même temps que `docker compose up` (compose.yaml, utilisé
+# pour le workflow "code en local + base en Docker") : les deux définissent un
+# service de base de données MySQL distinct.
+services:
+  app:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8080:80"
+    environment:
+      APP_ENV: dev
+      APP_DEBUG: "1"
+      APP_SECRET: changeme
+      DATABASE_URL: "mysql://app:app_password_123@db:3306/app?serverVersion=5.7.26&charset=utf8mb4"
+    depends_on:
+      - db
+    volumes:
+      - ./public/uploads:/var/www/html/public/uploads
+
+  db:
+    image: mysql:5.7.26
+    environment:
+      MYSQL_DATABASE: app
+      MYSQL_USER: app
+      MYSQL_PASSWORD: app_password_123
+      MYSQL_ROOT_PASSWORD: root_password_123
+    volumes:
+      - db_full_data:/var/lib/mysql
+      - ./docker/db/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+
+  # Interface web pour inspecter directement la base de données (utile pour
+  # comparer avec les résultats obtenus via l'injection SQL du module A03).
+  adminer:
+    image: adminer:4.8.1
+    ports:
+      - "8081:8080"
+
+volumes:
+  db_full_data:

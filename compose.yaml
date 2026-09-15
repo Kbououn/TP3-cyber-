@@ -1,0 +1,25 @@
+
+services:
+###> doctrine/doctrine-bundle ###
+  # ATTENTION : image MySQL 5.7 volontairement ancienne et non maintenue (EOL),
+  # utilisée ici uniquement pour illustrer la partie "scan d'image Docker" avec
+  # Trivy. Ne jamais utiliser une version obsolète en production.
+  database:
+    image: mysql:5.7.26
+    environment:
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-app}
+      MYSQL_USER: ${MYSQL_USER:-app}
+      # Mot de passe volontairement faible et codé en dur dans ce fichier versionné.
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-app_password_123}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-root_password_123}
+    ports:
+      - "3306:3306"
+    volumes:
+      - database_data:/var/lib/mysql:rw
+      - ./docker/db/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+###< doctrine/doctrine-bundle ###
+
+volumes:
+###> doctrine/doctrine-bundle ###
+  database_data:
+###< doctrine/doctrine-bundle ###
