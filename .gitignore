@@ -12,3 +12,6 @@
 # Fichiers déposés via le module A08 (upload sans validation) : à ne pas versionner.
 /public/uploads/*
 !/public/uploads/.gitkeep
+
+# Fichiers d'IDE
+/.idea/
