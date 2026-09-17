@@ -1,0 +1,2370 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.74.0"
+  },
+  "ReportID": "01a0a973-665e-7c3b-b565-66253cd604a5",
+  "CreatedAt": "2026-09-16T11:01:47.4868016+02:00",
+  "ArtifactID": "sha256:b1d21c4dc456b31043fed8db4e1c8ca3c84ded4b04dc88316062364441ce11e8",
+  "ArtifactName": ".",
+  "ArtifactType": "repository",
+  "Metadata": {
+    "RepoURL": "https://github.com/Kbououn/poc-symfony-owasp-cve.git",
+    "Branch": "main",
+    "Commit": "2b9271299f65e1215f0e49813e200f79d9851741",
+    "CommitMsg": "README",
+    "Author": "Daniween \u003csoudry.daniel99@gmail.com\u003e",
+    "Committer": "Daniween \u003csoudry.daniel99@gmail.com\u003e"
+  },
+  "Results": [
+    {
+      "Target": "composer.lock",
+      "Class": "lang-pkgs",
+      "Type": "composer",
+      "Packages": [
+        {
+          "ID": "doctrine/doctrine-bundle@2.13.0",
+          "Name": "doctrine/doctrine-bundle",
+          "Identifier": {
+            "PURL": "pkg:composer/doctrine/doctrine-bundle@2.13.0",
+            "UID": "b3a7746901a28331"
+          },
+          "Version": "2.13.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Relationship": "direct",
+          "DependsOn": [
+            "doctrine/cache@2.2.0",
+            "doctrine/dbal@3.10.6",
+            "doctrine/persistence@3.4.5",
+            "doctrine/sql-formatter@1.5.4",
+            "symfony/cache@v6.1.11",
+            "symfony/config@v6.1.11",
+            "symfony/console@v6.1.11",
+            "symfony/dependency-injection@v6.1.12",
+            "symfony/deprecation-contracts@v3.7.1",
+            "symfony/doctrine-bridge@v6.1.11",
+            "symfony/framework-bundle@v6.1.11",
+            "symfony/service-contracts@v3.7.3"
+          ],
+          "Locations": [
+            {
+              "StartLine": 442,
+              "EndLine": 561
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "doctrine/doctrine-migrations-bundle@3.7.1",
+          "Name": "doctrine/doctrine-migrations-bundle",
+          "Identifier": {
+            "PURL": "pkg:composer/doctrine/doctrine-migrations-bundle@3.7.1",
+            "UID": "dd09d1f04b044cd8"
+          },
+          "Version": "3.7.1",
+          "Licenses": [
+            "MIT"
+          ],
+          "Relationship": "direct",
+          "DependsOn": [
+            "doctrine/dbal@3.10.6",
+            "doctrine/doctrine-bundle@2.13.0",
+            "doctrine/migrations@3.9.7",
+            "psr/log@3.0.2",
+            "symfony/config@v6.1.11",
+            "symfony/console@v6.1.11",
+            "symfony/dependency-injection@v6.1.12",
+            "symfony/deprecation-contracts@v3.7.1",
+            "symfony/framework-bundle@v6.1.11",
+            "symfony/http-foundation@v6.1.12",
+            "symfony/http-kernel@v6.1.12",
+            "symfony/service-contracts@v3.7.3"
+          ],
+          "Locations": [
+            {
+              "StartLine": 562,
+              "EndLine": 654
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "doctrine/orm@2.20.13",
+          "Name": "doctrine/orm",
+          "Identifier": {
+            "PURL": "pkg:composer/doctrine/orm@2.20.13",
+            "UID": "ee57a962ec1df43"
+          },
+          "Version": "2.20.13",
+          "Licenses": [
+            "MIT"
+          ],
+          "Relationship": "direct",
+          "DependsOn": [
+            "doctrine/cache@2.2.0",
+            "doctrine/collections@2.6.0",
+            "doctrine/common@3.5.0",
+            "doctrine/dbal@3.10.6",
+            "doctrine/deprecations@1.1.6",
+            "doctrine/event-manager@2.1.1",
+            "doctrine/inflector@2.1.0",
+            "doctrine/instantiator@2.0.0",
+            "doctrine/lexer@3.0.1",
+            "doctrine/persistence@3.4.5",
+            "psr/cache@3.0.0",
+            "symfony/console@v6.1.11"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1086,
+              "EndLine": 1186
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "firebase/php-jwt@v5.5.1",
+          "Name": "firebase/php-jwt",
+          "Identifier": {
+            "PURL": "pkg:composer/firebase/php-jwt@v5.5.1",
+            "UID": "190e42134a5071ba"
+          },
+          "Version": "v5.5.1",
+          "Licenses": [
+            "BSD-3-Clause"
+          ],
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 1338,
+              "EndLine": 1394
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "guzzlehttp/guzzle@6.5.8",
+          "Name": "guzzlehttp/guzzle",
+          "Identifier": {
+            "PURL": "pkg:composer/guzzlehttp/guzzle@6.5.8",
+            "UID": "5a53cc989e311033"
+          },
+          "Version": "6.5.8",
+          "Licenses": [
+            "MIT"
+          ],
+          "Relationship": "direct",
+          "DependsOn": [
+            "guzzlehttp/promises@1.5.3",
+            "guzzlehttp/psr7@1.9.1",
+            "symfony/polyfill-intl-idn@v1.42.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1395,
+              "EndLine": 1509
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/asset@v6.1.11",
+          "Name": "symfony/asset",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/asset@v6.1.11",
+            "UID": "23f01856521c9be9"
+          },
+          "Version": "v6.1.11",
+          "Licenses": [
+            "MIT"
+          ],
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 2098,
+              "EndLine": 2169
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/console@v6.1.11",
+          "Name": "symfony/console",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/console@v6.1.11",
+            "UID": "98c9660c2b92a9a1"
+          },
+          "Version": "v6.1.11",
+          "Licenses": [
+            "MIT"
+          ],
+          "Relationship": "direct",
+          "DependsOn": [
+            "symfony/deprecation-contracts@v3.7.1",
+            "symfony/polyfill-mbstring@v1.38.2",
+            "symfony/service-contracts@v3.7.3",
+            "symfony/string@v6.1.11"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2423,
+              "EndLine": 2518
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/dotenv@v6.1.11",
+          "Name": "symfony/dotenv",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/dotenv@v6.1.11",
+            "UID": "25a315aa02a362a7"
+          },
+          "Version": "v6.1.11",
+          "Licenses": [
+            "MIT"
+          ],
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 2792,
+              "EndLine": 2864
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/flex@v2.11.0",
+          "Name": "symfony/flex",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/flex@v2.11.0",
+            "UID": "56c4c83480efa286"
+          },
+          "Version": "v2.11.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 3226,
+              "EndLine": 3298
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/form@v6.1.11",
+          "Name": "symfony/form",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/form@v6.1.11",
+            "UID": "51cb8740bbc04237"
+          },
+          "Version": "v6.1.11",
+          "Licenses": [
+            "MIT"
+          ],
+          "Relationship": "direct",
+          "DependsOn": [
+            "symfony/deprecation-contracts@v3.7.1",
+            "symfony/event-dispatcher@v6.1.11",
+            "symfony/options-resolver@v6.1.11",
+            "symfony/polyfill-intl-icu@v1.38.0",
+            "symfony/polyfill-mbstring@v1.38.2",
+            "symfony/property-access@v6.1.11",
+            "symfony/service-contracts@v3.7.3"
+          ],
+          "Locations": [
+            {
+              "StartLine": 3299,
+              "EndLine": 3400
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/framework-bundle@v6.1.11",
+          "Name": "symfony/framework-bundle",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/framework-bundle@v6.1.11",
+            "UID": "c94d376a278af936"
+          },
+          "Version": "v6.1.11",
+          "Licenses": [
+            "MIT"
+          ],
+          "Relationship": "direct",
+          "DependsOn": [
+            "symfony/cache@v6.1.11",
+            "symfony/config@v6.1.11",
+            "symfony/dependency-injection@v6.1.12",
+            "symfony/deprecation-contracts@v3.7.1",
+            "symfony/error-handler@v6.1.11",
+            "symfony/event-dispatcher@v6.1.11",
+            "symfony/filesystem@v6.1.11",
+            "symfony/finder@v6.1.11",
+            "symfony/http-foundation@v6.1.12",
+            "symfony/http-kernel@v6.1.12",
+            "symfony/polyfill-mbstring@v1.38.2",
+            "symfony/routing@v6.1.11"
+          ],
+          "Locations": [
+            {
+              "StartLine": 3401,
+              "EndLine": 3551
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/monolog-bundle@v3.10.0",
+          "Name": "symfony/monolog-bundle",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/monolog-bundle@v3.10.0",
+            "UID": "2bce4c9f414ce9cc"
+          },
+          "Version": "v3.10.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Relationship": "direct",
+          "DependsOn": [
+            "monolog/monolog@3.12.0",
+            "symfony/config@v6.1.11",
+            "symfony/dependency-injection@v6.1.12",
+            "symfony/http-kernel@v6.1.12",
+            "symfony/monolog-bridge@v6.1.11"
+          ],
+          "Locations": [
+            {
+              "StartLine": 3820,
+              "EndLine": 3900
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/runtime@v6.1.11",
+          "Name": "symfony/runtime",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/runtime@v6.1.11",
+            "UID": "6727ed9feb29de96"
+          },
+          "Version": "v6.1.11",
+          "Licenses": [
+            "MIT"
+          ],
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 4803,
+              "EndLine": 4878
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/security-bundle@v6.1.12",
+          "Name": "symfony/security-bundle",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/security-bundle@v6.1.12",
+            "UID": "ab4693ec4fee470f"
+          },
+          "Version": "v6.1.12",
+          "Licenses": [
+            "MIT"
+          ],
+          "Relationship": "direct",
+          "DependsOn": [
+            "symfony/config@v6.1.11",
+            "symfony/dependency-injection@v6.1.12",
+            "symfony/event-dispatcher@v6.1.11",
+            "symfony/http-foundation@v6.1.12",
+            "symfony/http-kernel@v6.1.12",
+            "symfony/password-hasher@v6.1.11",
+            "symfony/security-core@v6.1.11",
+            "symfony/security-csrf@v6.1.11",
+            "symfony/security-http@v6.1.12"
+          ],
+          "Locations": [
+            {
+              "StartLine": 4879,
+              "EndLine": 4978
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/twig-bundle@v6.1.11",
+          "Name": "symfony/twig-bundle",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/twig-bundle@v6.1.11",
+            "UID": "9d33956f80bd2af7"
+          },
+          "Version": "v6.1.11",
+          "Licenses": [
+            "MIT"
+          ],
+          "Relationship": "direct",
+          "DependsOn": [
+            "symfony/config@v6.1.11",
+            "symfony/dependency-injection@v6.1.12",
+            "symfony/http-foundation@v6.1.12",
+            "symfony/http-kernel@v6.1.12",
+            "symfony/twig-bridge@v6.1.11",
+            "twig/twig@v3.28.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 5662,
+              "EndLine": 5747
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/validator@v6.1.11",
+          "Name": "symfony/validator",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/validator@v6.1.11",
+            "UID": "e670a0792577498e"
+          },
+          "Version": "v6.1.11",
+          "Licenses": [
+            "MIT"
+          ],
+          "Relationship": "direct",
+          "DependsOn": [
+            "symfony/deprecation-contracts@v3.7.1",
+            "symfony/polyfill-mbstring@v1.38.2",
+            "symfony/translation-contracts@v3.7.1"
+          ],
+          "Locations": [
+            {
+              "StartLine": 5748,
+              "EndLine": 5855
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/web-profiler-bundle@v6.1.11",
+          "Name": "symfony/web-profiler-bundle",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/web-profiler-bundle@v6.1.11",
+            "UID": "8bd8935216026dd3"
+          },
+          "Version": "v6.1.11",
+          "Licenses": [
+            "MIT"
+          ],
+          "Relationship": "direct",
+          "DependsOn": [
+            "symfony/config@v6.1.11",
+            "symfony/framework-bundle@v6.1.11",
+            "symfony/http-kernel@v6.1.12",
+            "symfony/routing@v6.1.11",
+            "symfony/twig-bundle@v6.1.11",
+            "twig/twig@v3.28.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 6025,
+              "EndLine": 6102
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/yaml@v6.1.11",
+          "Name": "symfony/yaml",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/yaml@v6.1.11",
+            "UID": "3aeb46d99adbaba5"
+          },
+          "Version": "v6.1.11",
+          "Licenses": [
+            "MIT"
+          ],
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 6103,
+              "EndLine": 6176
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "doctrine/cache@2.2.0",
+          "Name": "doctrine/cache",
+          "Identifier": {
+            "PURL": "pkg:composer/doctrine/cache@2.2.0",
+            "UID": "119f068b5147210c"
+          },
+          "Version": "2.2.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 9,
+              "EndLine": 102
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "doctrine/collections@2.6.0",
+          "Name": "doctrine/collections",
+          "Identifier": {
+            "PURL": "pkg:composer/doctrine/collections@2.6.0",
+            "UID": "e158f41665cf7540"
+          },
+          "Version": "2.6.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "doctrine/deprecations@1.1.6",
+            "symfony/polyfill-php84@v1.38.1"
+          ],
+          "Locations": [
+            {
+              "StartLine": 103,
+              "EndLine": 188
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "doctrine/common@3.5.0",
+          "Name": "doctrine/common",
+          "Identifier": {
+            "PURL": "pkg:composer/doctrine/common@3.5.0",
+            "UID": "9709641e18e930d"
+          },
+          "Version": "3.5.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "doctrine/persistence@3.4.5"
+          ],
+          "Locations": [
+            {
+              "StartLine": 189,
+              "EndLine": 279
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "doctrine/dbal@3.10.6",
+          "Name": "doctrine/dbal",
+          "Identifier": {
+            "PURL": "pkg:composer/doctrine/dbal@3.10.6",
+            "UID": "824ba6e3ee3968a5"
+          },
+          "Version": "3.10.6",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "doctrine/deprecations@1.1.6",
+            "doctrine/event-manager@2.1.1",
+            "psr/cache@3.0.0",
+            "psr/log@3.0.2"
+          ],
+          "Locations": [
+            {
+              "StartLine": 280,
+              "EndLine": 393
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "doctrine/deprecations@1.1.6",
+          "Name": "doctrine/deprecations",
+          "Identifier": {
+            "PURL": "pkg:composer/doctrine/deprecations@1.1.6",
+            "UID": "3f0adccbb51e68a3"
+          },
+          "Version": "1.1.6",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 394,
+              "EndLine": 441
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "doctrine/event-manager@2.1.1",
+          "Name": "doctrine/event-manager",
+          "Identifier": {
+            "PURL": "pkg:composer/doctrine/event-manager@2.1.1",
+            "UID": "3a20ff53f5d953f9"
+          },
+          "Version": "2.1.1",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 655,
+              "EndLine": 745
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "doctrine/inflector@2.1.0",
+          "Name": "doctrine/inflector",
+          "Identifier": {
+            "PURL": "pkg:composer/doctrine/inflector@2.1.0",
+            "UID": "f0f83d0c591286cd"
+          },
+          "Version": "2.1.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 746,
+              "EndLine": 835
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "doctrine/instantiator@2.0.0",
+          "Name": "doctrine/instantiator",
+          "Identifier": {
+            "PURL": "pkg:composer/doctrine/instantiator@2.0.0",
+            "UID": "5455388ee049130c"
+          },
+          "Version": "2.0.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 836,
+              "EndLine": 905
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "doctrine/lexer@3.0.1",
+          "Name": "doctrine/lexer",
+          "Identifier": {
+            "PURL": "pkg:composer/doctrine/lexer@3.0.1",
+            "UID": "c56154e15a60bcb1"
+          },
+          "Version": "3.0.1",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 906,
+              "EndLine": 982
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "doctrine/migrations@3.9.7",
+          "Name": "doctrine/migrations",
+          "Identifier": {
+            "PURL": "pkg:composer/doctrine/migrations@3.9.7",
+            "UID": "66f8cb27c3d97280"
+          },
+          "Version": "3.9.7",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "doctrine/dbal@3.10.6",
+            "doctrine/deprecations@1.1.6",
+            "doctrine/event-manager@2.1.1",
+            "psr/log@3.0.2",
+            "symfony/console@v6.1.11",
+            "symfony/stopwatch@v6.1.11",
+            "symfony/var-exporter@v6.4.45"
+          ],
+          "Locations": [
+            {
+              "StartLine": 983,
+              "EndLine": 1085
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "doctrine/persistence@3.4.5",
+          "Name": "doctrine/persistence",
+          "Identifier": {
+            "PURL": "pkg:composer/doctrine/persistence@3.4.5",
+            "UID": "f9e8b005a97152f3"
+          },
+          "Version": "3.4.5",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "doctrine/event-manager@2.1.1",
+            "psr/cache@3.0.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1187,
+              "EndLine": 1282
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "doctrine/sql-formatter@1.5.4",
+          "Name": "doctrine/sql-formatter",
+          "Identifier": {
+            "PURL": "pkg:composer/doctrine/sql-formatter@1.5.4",
+            "UID": "316c0396cbd4026d"
+          },
+          "Version": "1.5.4",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 1283,
+              "EndLine": 1337
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "guzzlehttp/promises@1.5.3",
+          "Name": "guzzlehttp/promises",
+          "Identifier": {
+            "PURL": "pkg:composer/guzzlehttp/promises@1.5.3",
+            "UID": "4db7c33c910a992f"
+          },
+          "Version": "1.5.3",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 1510,
+              "EndLine": 1588
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "guzzlehttp/psr7@1.9.1",
+          "Name": "guzzlehttp/psr7",
+          "Identifier": {
+            "PURL": "pkg:composer/guzzlehttp/psr7@1.9.1",
+            "UID": "27bf7a07de8a3067"
+          },
+          "Version": "1.9.1",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "psr/http-message@1.1",
+            "ralouphie/getallheaders@3.0.3"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1589,
+              "EndLine": 1693
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "monolog/monolog@3.12.0",
+          "Name": "monolog/monolog",
+          "Identifier": {
+            "PURL": "pkg:composer/monolog/monolog@3.12.0",
+            "UID": "b718fd03be2514dc"
+          },
+          "Version": "3.12.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "psr/log@3.0.2"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1694,
+              "EndLine": 1798
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "psr/cache@3.0.0",
+          "Name": "psr/cache",
+          "Identifier": {
+            "PURL": "pkg:composer/psr/cache@3.0.0",
+            "UID": "4a09823d8269959b"
+          },
+          "Version": "3.0.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 1799,
+              "EndLine": 1847
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "psr/container@2.0.2",
+          "Name": "psr/container",
+          "Identifier": {
+            "PURL": "pkg:composer/psr/container@2.0.2",
+            "UID": "50e0bb13d2381a77"
+          },
+          "Version": "2.0.2",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 1848,
+              "EndLine": 1900
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "psr/event-dispatcher@1.0.0",
+          "Name": "psr/event-dispatcher",
+          "Identifier": {
+            "PURL": "pkg:composer/psr/event-dispatcher@1.0.0",
+            "UID": "4ffe120a968a2b7e"
+          },
+          "Version": "1.0.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 1901,
+              "EndLine": 1950
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "psr/http-message@1.1",
+          "Name": "psr/http-message",
+          "Identifier": {
+            "PURL": "pkg:composer/psr/http-message@1.1",
+            "UID": "94003e17bc726a8a"
+          },
+          "Version": "1.1",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 1951,
+              "EndLine": 2003
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "psr/log@3.0.2",
+          "Name": "psr/log",
+          "Identifier": {
+            "PURL": "pkg:composer/psr/log@3.0.2",
+            "UID": "a8995f22f514b599"
+          },
+          "Version": "3.0.2",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 2004,
+              "EndLine": 2053
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "ralouphie/getallheaders@3.0.3",
+          "Name": "ralouphie/getallheaders",
+          "Identifier": {
+            "PURL": "pkg:composer/ralouphie/getallheaders@3.0.3",
+            "UID": "1d1cf25fe0497099"
+          },
+          "Version": "3.0.3",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 2054,
+              "EndLine": 2097
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/cache@v6.1.11",
+          "Name": "symfony/cache",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/cache@v6.1.11",
+            "UID": "b78ae1ea7421fcb0"
+          },
+          "Version": "v6.1.11",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "psr/cache@3.0.0",
+            "psr/log@3.0.2",
+            "symfony/cache-contracts@v3.7.1",
+            "symfony/service-contracts@v3.7.3",
+            "symfony/var-exporter@v6.4.45"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2170,
+              "EndLine": 2265
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/cache-contracts@v3.7.1",
+          "Name": "symfony/cache-contracts",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/cache-contracts@v3.7.1",
+            "UID": "1ef6eeba731de6e8"
+          },
+          "Version": "v3.7.1",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "psr/cache@3.0.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2266,
+              "EndLine": 2345
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/config@v6.1.11",
+          "Name": "symfony/config",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/config@v6.1.11",
+            "UID": "83cb847a586cdd24"
+          },
+          "Version": "v6.1.11",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "symfony/deprecation-contracts@v3.7.1",
+            "symfony/filesystem@v6.1.11"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2346,
+              "EndLine": 2422
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/dependency-injection@v6.1.12",
+          "Name": "symfony/dependency-injection",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/dependency-injection@v6.1.12",
+            "UID": "796fa165f5e326de"
+          },
+          "Version": "v6.1.12",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "psr/container@2.0.2",
+            "symfony/deprecation-contracts@v3.7.1",
+            "symfony/service-contracts@v3.7.3"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2519,
+              "EndLine": 2605
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/deprecation-contracts@v3.7.1",
+          "Name": "symfony/deprecation-contracts",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/deprecation-contracts@v3.7.1",
+            "UID": "f3bfb43bea4ef44d"
+          },
+          "Version": "v3.7.1",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 2606,
+              "EndLine": 2676
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/doctrine-bridge@v6.1.11",
+          "Name": "symfony/doctrine-bridge",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/doctrine-bridge@v6.1.11",
+            "UID": "bfcc9d18bc50fddd"
+          },
+          "Version": "v6.1.11",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "doctrine/event-manager@2.1.1",
+            "doctrine/persistence@3.4.5",
+            "symfony/deprecation-contracts@v3.7.1",
+            "symfony/polyfill-mbstring@v1.38.2",
+            "symfony/service-contracts@v3.7.3"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2677,
+              "EndLine": 2791
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/error-handler@v6.1.11",
+          "Name": "symfony/error-handler",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/error-handler@v6.1.11",
+            "UID": "4ace5a4218a01f0b"
+          },
+          "Version": "v6.1.11",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "psr/log@3.0.2",
+            "symfony/var-dumper@v6.1.11"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2865,
+              "EndLine": 2935
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/event-dispatcher@v6.1.11",
+          "Name": "symfony/event-dispatcher",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/event-dispatcher@v6.1.11",
+            "UID": "ed5591054be081b1"
+          },
+          "Version": "v6.1.11",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "symfony/event-dispatcher-contracts@v3.7.1"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2936,
+              "EndLine": 3018
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/event-dispatcher-contracts@v3.7.1",
+          "Name": "symfony/event-dispatcher-contracts",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/event-dispatcher-contracts@v3.7.1",
+            "UID": "dbbeaafe2243e7fa"
+          },
+          "Version": "v3.7.1",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "psr/event-dispatcher@1.0.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 3019,
+              "EndLine": 3098
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/filesystem@v6.1.11",
+          "Name": "symfony/filesystem",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/filesystem@v6.1.11",
+            "UID": "e5f3b378ced04ae4"
+          },
+          "Version": "v6.1.11",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "symfony/polyfill-mbstring@v1.38.2"
+          ],
+          "Locations": [
+            {
+              "StartLine": 3099,
+              "EndLine": 3161
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/finder@v6.1.11",
+          "Name": "symfony/finder",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/finder@v6.1.11",
+            "UID": "9de173b074c8868e"
+          },
+          "Version": "v6.1.11",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 3162,
+              "EndLine": 3225
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/http-foundation@v6.1.12",
+          "Name": "symfony/http-foundation",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/http-foundation@v6.1.12",
+            "UID": "c0fc6f56c8e62996"
+          },
+          "Version": "v6.1.12",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "symfony/deprecation-contracts@v3.7.1",
+            "symfony/polyfill-mbstring@v1.38.2"
+          ],
+          "Locations": [
+            {
+              "StartLine": 3552,
+              "EndLine": 3626
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/http-kernel@v6.1.12",
+          "Name": "symfony/http-kernel",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/http-kernel@v6.1.12",
+            "UID": "d58e82f9561f4eaa"
+          },
+          "Version": "v6.1.12",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "psr/log@3.0.2",
+            "symfony/error-handler@v6.1.11",
+            "symfony/event-dispatcher@v6.1.11",
+            "symfony/http-foundation@v6.1.12"
+          ],
+          "Locations": [
+            {
+              "StartLine": 3627,
+              "EndLine": 3736
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/monolog-bridge@v6.1.11",
+          "Name": "symfony/monolog-bridge",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/monolog-bridge@v6.1.11",
+            "UID": "af465e58ff934db6"
+          },
+          "Version": "v6.1.11",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "monolog/monolog@3.12.0",
+            "symfony/http-kernel@v6.1.12",
+            "symfony/service-contracts@v3.7.3"
+          ],
+          "Locations": [
+            {
+              "StartLine": 3737,
+              "EndLine": 3819
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/options-resolver@v6.1.11",
+          "Name": "symfony/options-resolver",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/options-resolver@v6.1.11",
+            "UID": "9f46f5a190772cc8"
+          },
+          "Version": "v6.1.11",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "symfony/deprecation-contracts@v3.7.1"
+          ],
+          "Locations": [
+            {
+              "StartLine": 3901,
+              "EndLine": 3967
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/password-hasher@v6.1.11",
+          "Name": "symfony/password-hasher",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/password-hasher@v6.1.11",
+            "UID": "a7064a1664d8edc6"
+          },
+          "Version": "v6.1.11",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 3968,
+              "EndLine": 4039
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/polyfill-intl-grapheme@v1.41.0",
+          "Name": "symfony/polyfill-intl-grapheme",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/polyfill-intl-grapheme@v1.41.0",
+            "UID": "b0ad0e41a814920f"
+          },
+          "Version": "v1.41.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 4040,
+              "EndLine": 4121
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/polyfill-intl-icu@v1.38.0",
+          "Name": "symfony/polyfill-intl-icu",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/polyfill-intl-icu@v1.38.0",
+            "UID": "a56a3dde1ac8db47"
+          },
+          "Version": "v1.38.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 4122,
+              "EndLine": 4209
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/polyfill-intl-idn@v1.42.0",
+          "Name": "symfony/polyfill-intl-idn",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/polyfill-intl-idn@v1.42.0",
+            "UID": "53fa559cf4298b7b"
+          },
+          "Version": "v1.42.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "symfony/polyfill-intl-normalizer@v1.42.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 4210,
+              "EndLine": 4296
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/polyfill-intl-normalizer@v1.42.0",
+          "Name": "symfony/polyfill-intl-normalizer",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/polyfill-intl-normalizer@v1.42.0",
+            "UID": "229f5e970e85acc0"
+          },
+          "Version": "v1.42.0",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 4297,
+              "EndLine": 4381
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/polyfill-mbstring@v1.38.2",
+          "Name": "symfony/polyfill-mbstring",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/polyfill-mbstring@v1.38.2",
+            "UID": "868d0cd76d8c3dc6"
+          },
+          "Version": "v1.38.2",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 4382,
+              "EndLine": 4466
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/polyfill-php84@v1.38.1",
+          "Name": "symfony/polyfill-php84",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/polyfill-php84@v1.38.1",
+            "UID": "1c89891ecf880a86"
+          },
+          "Version": "v1.38.1",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 4467,
+              "EndLine": 4546
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/property-access@v6.1.11",
+          "Name": "symfony/property-access",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/property-access@v6.1.11",
+            "UID": "2f6368d1da5687e0"
+          },
+          "Version": "v6.1.11",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "symfony/property-info@v6.1.11"
+          ],
+          "Locations": [
+            {
+              "StartLine": 4547,
+              "EndLine": 4625
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/property-info@v6.1.11",
+          "Name": "symfony/property-info",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/property-info@v6.1.11",
+            "UID": "1380c051415d2c61"
+          },
+          "Version": "v6.1.11",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "symfony/string@v6.1.11"
+          ],
+          "Locations": [
+            {
+              "StartLine": 4626,
+              "EndLine": 4714
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/routing@v6.1.11",
+          "Name": "symfony/routing",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/routing@v6.1.11",
+            "UID": "be1a3b346df2dec4"
+          },
+          "Version": "v6.1.11",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 4715,
+              "EndLine": 4802
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/security-core@v6.1.11",
+          "Name": "symfony/security-core",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/security-core@v6.1.11",
+            "UID": "83960f2a1404b9f"
+          },
+          "Version": "v6.1.11",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "symfony/event-dispatcher-contracts@v3.7.1",
+            "symfony/password-hasher@v6.1.11",
+            "symfony/service-contracts@v3.7.3"
+          ],
+          "Locations": [
+            {
+              "StartLine": 4979,
+              "EndLine": 5069
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/security-csrf@v6.1.11",
+          "Name": "symfony/security-csrf",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/security-csrf@v6.1.11",
+            "UID": "2a4c382ff94bf8e5"
+          },
+          "Version": "v6.1.11",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "symfony/security-core@v6.1.11"
+          ],
+          "Locations": [
+            {
+              "StartLine": 5070,
+              "EndLine": 5140
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/security-http@v6.1.12",
+          "Name": "symfony/security-http",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/security-http@v6.1.12",
+            "UID": "467dc7922baff9ed"
+          },
+          "Version": "v6.1.12",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "symfony/http-foundation@v6.1.12",
+            "symfony/http-kernel@v6.1.12",
+            "symfony/polyfill-mbstring@v1.38.2",
+            "symfony/property-access@v6.1.11",
+            "symfony/security-core@v6.1.11"
+          ],
+          "Locations": [
+            {
+              "StartLine": 5141,
+              "EndLine": 5223
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/service-contracts@v3.7.3",
+          "Name": "symfony/service-contracts",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/service-contracts@v3.7.3",
+            "UID": "a931c8891f3b2e1f"
+          },
+          "Version": "v3.7.3",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "psr/container@2.0.2",
+            "symfony/deprecation-contracts@v3.7.1"
+          ],
+          "Locations": [
+            {
+              "StartLine": 5224,
+              "EndLine": 5310
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/stopwatch@v6.1.11",
+          "Name": "symfony/stopwatch",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/stopwatch@v6.1.11",
+            "UID": "33c442b830f5778e"
+          },
+          "Version": "v6.1.11",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "symfony/service-contracts@v3.7.3"
+          ],
+          "Locations": [
+            {
+              "StartLine": 5311,
+              "EndLine": 5372
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/string@v6.1.11",
+          "Name": "symfony/string",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/string@v6.1.11",
+            "UID": "9d6161ca3c3e08b0"
+          },
+          "Version": "v6.1.11",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "symfony/polyfill-intl-grapheme@v1.41.0",
+            "symfony/polyfill-intl-normalizer@v1.42.0",
+            "symfony/polyfill-mbstring@v1.38.2"
+          ],
+          "Locations": [
+            {
+              "StartLine": 5373,
+              "EndLine": 5457
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/translation-contracts@v3.7.1",
+          "Name": "symfony/translation-contracts",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/translation-contracts@v3.7.1",
+            "UID": "610110f671621530"
+          },
+          "Version": "v3.7.1",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "Locations": [
+            {
+              "StartLine": 5458,
+              "EndLine": 5539
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/twig-bridge@v6.1.11",
+          "Name": "symfony/twig-bridge",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/twig-bridge@v6.1.11",
+            "UID": "1ad380d4cc379c60"
+          },
+          "Version": "v6.1.11",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "symfony/translation-contracts@v3.7.1",
+            "twig/twig@v3.28.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 5540,
+              "EndLine": 5661
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/var-dumper@v6.1.11",
+          "Name": "symfony/var-dumper",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/var-dumper@v6.1.11",
+            "UID": "cf17d1ab47ec4164"
+          },
+          "Version": "v6.1.11",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "symfony/polyfill-mbstring@v1.38.2"
+          ],
+          "Locations": [
+            {
+              "StartLine": 5856,
+              "EndLine": 5943
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "symfony/var-exporter@v6.4.45",
+          "Name": "symfony/var-exporter",
+          "Identifier": {
+            "PURL": "pkg:composer/symfony/var-exporter@v6.4.45",
+            "UID": "64672a660e44fcf7"
+          },
+          "Version": "v6.4.45",
+          "Licenses": [
+            "MIT"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "symfony/deprecation-contracts@v3.7.1"
+          ],
+          "Locations": [
+            {
+              "StartLine": 5944,
+              "EndLine": 6024
+            }
+          ],
+          "AnalyzedBy": "composer"
+        },
+        {
+          "ID": "twig/twig@v3.28.0",
+          "Name": "twig/twig",
+          "Identifier": {
+            "PURL": "pkg:composer/twig/twig@v3.28.0",
+            "UID": "f1432a8febab5288"
+          },
+          "Version": "v3.28.0",
+          "Licenses": [
+            "BSD-3-Clause"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "symfony/deprecation-contracts@v3.7.1",
+            "symfony/polyfill-mbstring@v1.38.2"
+          ],
+          "Locations": [
+            {
+              "StartLine": 6177,
+              "EndLine": 6256
+            }
+          ],
+          "AnalyzedBy": "composer"
+        }
+      ],
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2021-46743",
+          "PkgID": "firebase/php-jwt@v5.5.1",
+          "PkgName": "firebase/php-jwt",
+          "PkgIdentifier": {
+            "PURL": "pkg:composer/firebase/php-jwt@v5.5.1",
+            "UID": "190e42134a5071ba"
+          },
+          "InstalledVersion": "v5.5.1",
+          "FixedVersion": "6.0.0",
+          "Status": "fixed",
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-46743",
+          "DataSource": {
+            "ID": "php-security-advisories",
+            "Name": "PHP Security Advisories Database",
+            "URL": "https://github.com/FriendsOfPHP/security-advisories"
+          },
+          "Fingerprint": "sha256:01380275984b6d02f23f8d0330b18bf1e83f6560e75db32cb70440f4476f7d65",
+          "Title": "Key/algorithm type confusion",
+          "Description": "In Firebase PHP-JWT before 6.0.0, an algorithm-confusion issue (e.g., RS256 / HS256) exists via the kid (aka Key ID) header, when multiple types of keys are loaded in a key ring. This allows an attacker to forge tokens that validate under the incorrect key. NOTE: this provides a straightforward way to use the PHP-JWT library unsafely, but might not be considered a vulnerability in the library itself.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-843"
+          ],
+          "VendorSeverity": {
+            "ghsa": 4,
+            "nvd": 4
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 9.1
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V2Score": 5.8,
+              "V3Score": 9.1
+            }
+          },
+          "References": [
+            "https://github.com/FriendsOfPHP/security-advisories/blob/master/firebase/php-jwt/CVE-2021-46743.yaml",
+            "https://github.com/advisories/GHSA-8xf4-w7qw-pjjw",
+            "https://github.com/firebase/php-jwt",
+            "https://github.com/firebase/php-jwt/issues/351",
+            "https://github.com/firebase/php-jwt/releases/tag/v6.0.0",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-46743"
+          ],
+          "PublishedDate": "2022-03-29T07:15:07.017Z",
+          "LastModifiedDate": "2026-06-17T04:15:25.123Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-69246",
+          "VendorIDs": [
+            "GHSA-v5mv-p594-2x33"
+          ],
+          "PkgID": "guzzlehttp/guzzle@6.5.8",
+          "PkgName": "guzzlehttp/guzzle",
+          "PkgIdentifier": {
+            "PURL": "pkg:composer/guzzlehttp/guzzle@6.5.8",
+            "UID": "5a53cc989e311033"
+          },
+          "InstalledVersion": "6.5.8",
+          "FixedVersion": "7.15.2, 8.0.1",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-69246",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Composer",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Acomposer"
+          },
+          "Fingerprint": "sha256:79e0b3b6e45c34570c137edcc76942279afd5ad4b951e604f9418be4b9bda7e1",
+          "Title": "Guzzle is an extensible PHP HTTP client. Prior to 7.15.2 and 8.0.1, Gu ...",
+          "Description": "Guzzle is an extensible PHP HTTP client. Prior to 7.15.2 and 8.0.1, Guzzle gives a transport the request URI as text and supplies the Host header separately. The cURL handlers set CURLOPT_URL to the URI exactly as written and push that Host into CURLOPT_HTTPHEADER; StreamHandler does the same through fopen(). libcurl then parses the authority itself, percent-decoding it and, on an IDN-capable build, applying IDNA mapping, and uses the result to resolve, connect, name the TLS peer and address a proxy CONNECT, while the supplied Host suppresses the aligned one libcurl would have generated. For a URI host written as 127.0.0.%31, filter_var() rejects the host as an IP literal, yet libcurl decodes it to 127.0.0.1 and reaches loopback with no DNS lookup while the server receives Host: 127.0.0.%31. An attacker who influences a fetched URI can therefore reach a host the application's checks excluded and read whatever the host exposes of the response. The same divergence moves Guzzle's own decisions onto a spelling the transport does not use: no_proxy selects proxy routing from the literal host, and RedirectMiddleware decides from it whether to strip Authorization and Cookie. Exploitation requires the application to build a request URI from untrusted input and to make a host decision before handing it to Guzzle. This issue is fixed in versions 7.15.2 and 8.0.1.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-180",
+            "CWE-436",
+            "CWE-918",
+            "CWE-941"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+              "V3Score": 7.2
+            }
+          },
+          "References": [
+            "https://github.com/guzzle/guzzle",
+            "https://github.com/guzzle/guzzle/commit/3aeea0406aab88cbbd86531313d7cebf8ae149a4",
+            "https://github.com/guzzle/guzzle/commit/744101956d78b7c1384d0cbf379db13e859167bf",
+            "https://github.com/guzzle/guzzle/pull/3907",
+            "https://github.com/guzzle/guzzle/pull/3908",
+            "https://github.com/guzzle/guzzle/releases/tag/7.15.2",
+            "https://github.com/guzzle/guzzle/releases/tag/8.0.1",
+            "https://github.com/guzzle/guzzle/security/advisories/GHSA-v5mv-p594-2x33"
+          ],
+          "PublishedDate": "2026-08-03T21:16:42.563Z",
+          "LastModifiedDate": "2026-09-08T20:41:31.497Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-45073",
+          "PkgID": "symfony/cache@v6.1.11",
+          "PkgName": "symfony/cache",
+          "PkgIdentifier": {
+            "PURL": "pkg:composer/symfony/cache@v6.1.11",
+            "UID": "b78ae1ea7421fcb0"
+          },
+          "InstalledVersion": "v6.1.11",
+          "FixedVersion": "6.3.0, 6.4.0, 7.1.0, 7.4.0, 7.4.12, 5.2.0, 5.3.0, 6.1.0, 7.2.0, 7.3.0, 8.0.12, 3.0.0, 5.0.0, 5.4.0, 6.4.40, 6.2.0, 4.0.0, 5.1.0, 5.4.52",
+          "Status": "fixed",
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-45073",
+          "DataSource": {
+            "ID": "php-security-advisories",
+            "Name": "PHP Security Advisories Database",
+            "URL": "https://github.com/FriendsOfPHP/security-advisories"
+          },
+          "Fingerprint": "sha256:4626be691f2bc92489d1d5902f36fada13a68615520b57d8a7c93e98b99290b3",
+          "Title": "Symfony is a PHP framework for web and console applications and a set  ...",
+          "Description": "Symfony is a PHP framework for web and console applications and a set of reusable PHP components. Prior to 5.4.52, 6.4.40, 7.4.12, and 8.0.12, PdoAdapter::doClear() builds a DELETE statement using a namespace derived from the caller-supplied $prefix without binding or escaping it, allowing a caller able to influence $prefix to break out of the LIKE literal and alter query semantics or deletion scope. This issue is fixed in versions 5.4.52, 6.4.40, 7.4.12, and 8.0.12.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-89"
+          ],
+          "VendorSeverity": {
+            "ghsa": 2,
+            "nvd": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:H/VA:L/SC:N/SI:N/SA:N/E:U",
+              "V40Score": 5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+              "V3Score": 7.3
+            }
+          },
+          "References": [
+            "https://github.com/FriendsOfPHP/security-advisories/blob/master/symfony/cache/CVE-2026-45073.yaml",
+            "https://github.com/FriendsOfPHP/security-advisories/blob/master/symfony/symfony/CVE-2026-45073.yaml",
+            "https://github.com/symfony/symfony",
+            "https://github.com/symfony/symfony/commit/ec50b799d79ebe24561f29351c1efcb6da95c9b",
+            "https://github.com/symfony/symfony/commit/ec50b799d79ebe24561f29351c1efcb6da95c9b1",
+            "https://github.com/symfony/symfony/releases/tag/v5.4.52",
+            "https://github.com/symfony/symfony/releases/tag/v6.4.40",
+            "https://github.com/symfony/symfony/releases/tag/v7.4.12",
+            "https://github.com/symfony/symfony/releases/tag/v8.0.12",
+            "https://github.com/symfony/symfony/security/advisories/GHSA-6qh9-h6wf-jgqc",
+            "https://symfony.com/cve-2026-45073"
+          ],
+          "PublishedDate": "2026-07-14T19:17:06.413Z",
+          "LastModifiedDate": "2026-07-15T14:51:54.04Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-64500",
+          "PkgID": "symfony/http-foundation@v6.1.12",
+          "PkgName": "symfony/http-foundation",
+          "PkgIdentifier": {
+            "PURL": "pkg:composer/symfony/http-foundation@v6.1.12",
+            "UID": "c0fc6f56c8e62996"
+          },
+          "InstalledVersion": "v6.1.12",
+          "FixedVersion": "7.1.0, 7.3.0, 3.0.0, 5.2.0, 6.2.0, 7.3.7, 4.0.0, 6.4.0, 5.1.0, 5.3.0, 5.4.0, 6.1.0, 6.4.29, 7.2.0, 5.0.0, 5.4.50, 6.3.0",
+          "Status": "fixed",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-64500",
+          "DataSource": {
+            "ID": "php-security-advisories",
+            "Name": "PHP Security Advisories Database",
+            "URL": "https://github.com/FriendsOfPHP/security-advisories"
+          },
+          "Fingerprint": "sha256:8d37ee4ca4a916c461820c77f1d09c18cb628020d3290d9397e6b4f54e7e9223",
+          "Title": "Symfony is a PHP framework for web and console applications and a set  ...",
+          "Description": "Symfony is a PHP framework for web and console applications and a set of reusable PHP components. Symfony's HttpFoundation component defines an object-oriented layer for the HTTP specification. Starting in version 2.0.0 and prior to version 5.4.50, 6.4.29, and 7.3.7, the `Request` class improperly interprets some `PATH_INFO` in a way that leads to representing some URLs with a path that doesn't start with a `/`. This can allow bypassing some access control rules that are built with this `/`-prefix assumption. Starting in versions 5.4.50, 6.4.29, and 7.3.7, the `Request` class now ensures that URL paths always start with a `/`.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-647"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+              "V3Score": 7.3
+            }
+          },
+          "References": [
+            "https://github.com/FriendsOfPHP/security-advisories/blob/master/symfony/http-foundation/CVE-2025-64500.yaml",
+            "https://github.com/FriendsOfPHP/security-advisories/blob/master/symfony/symfony/CVE-2025-64500.yaml",
+            "https://github.com/symfony/symfony",
+            "https://github.com/symfony/symfony/commit/9962b91b12bb791322fa73836b350836b6db7cac",
+            "https://github.com/symfony/symfony/security/advisories/GHSA-3rg7-wf37-54rm",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-64500",
+            "https://symfony.com/blog/cve-2025-64500-incorrect-parsing-of-path-info-can-lead-to-limited-authorization-bypass"
+          ],
+          "PublishedDate": "2025-11-12T22:15:50.127Z",
+          "LastModifiedDate": "2026-06-17T09:54:28.277Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-45077",
+          "PkgID": "symfony/monolog-bridge@v6.1.11",
+          "PkgName": "symfony/monolog-bridge",
+          "PkgIdentifier": {
+            "PURL": "pkg:composer/symfony/monolog-bridge@v6.1.11",
+            "UID": "af465e58ff934db6"
+          },
+          "InstalledVersion": "v6.1.11",
+          "FixedVersion": "5.1.0, 5.3.0, 7.2.0, 8.0.12, 5.2.0, 7.4.12, 3.0.0, 4.0.0, 5.4.0, 5.4.52, 6.1.0, 6.2.0, 5.0.0, 6.4.40, 7.3.0, 7.4.0, 6.3.0, 6.4.0, 7.1.0",
+          "Status": "fixed",
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-45077",
+          "DataSource": {
+            "ID": "php-security-advisories",
+            "Name": "PHP Security Advisories Database",
+            "URL": "https://github.com/FriendsOfPHP/security-advisories"
+          },
+          "Fingerprint": "sha256:22d3f93f8b2e8e078cdffcd2ce23fd58a02a8f2e93a4e0d893cf7865f4e6694e",
+          "Title": "Symfony is a PHP framework for web and console applications and a set  ...",
+          "Description": "Symfony is a PHP framework for web and console applications and a set of reusable PHP components. Prior to 5.4.52, 6.4.40, 7.4.12, and 8.0.12, the server:log listener (Symfony\\Bridge\\Monolog\\Command\\ServerLogCommand) binds to 0.0.0.0:9911 by default and processes each received frame with unserialize(base64_decode($message)) without authentication, integrity checks, or an allowed_classes allowlist, allowing any reachable host to submit attacker-chosen serialized PHP payloads that can crash the listener and may trigger object-injection gadget effects. This issue is fixed in versions 5.4.52, 6.4.40, 7.4.12, and 8.0.12.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-502",
+            "CWE-668"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3,
+            "nvd": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:U",
+              "V40Score": 8.1
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H",
+              "V3Score": 8.6
+            }
+          },
+          "References": [
+            "https://github.com/FriendsOfPHP/security-advisories/blob/master/symfony/monolog-bridge/CVE-2026-45077.yaml",
+            "https://github.com/FriendsOfPHP/security-advisories/blob/master/symfony/symfony/CVE-2026-45077.yaml",
+            "https://github.com/symfony/symfony",
+            "https://github.com/symfony/symfony/commit/0891b2f293896c488e26943dc034334364b77fc4",
+            "https://github.com/symfony/symfony/releases/tag/v5.4.52",
+            "https://github.com/symfony/symfony/releases/tag/v6.4.40",
+            "https://github.com/symfony/symfony/releases/tag/v7.4.12",
+            "https://github.com/symfony/symfony/releases/tag/v8.0.12",
+            "https://github.com/symfony/symfony/security/advisories/GHSA-m7v2-7gxm-vc2v",
+            "https://symfony.com/cve-2026-45077"
+          ],
+          "PublishedDate": "2026-07-14T18:17:17.13Z",
+          "LastModifiedDate": "2026-07-15T15:35:50.48Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-45063",
+          "PkgID": "symfony/security-http@v6.1.12",
+          "PkgName": "symfony/security-http",
+          "PkgIdentifier": {
+            "PURL": "pkg:composer/symfony/security-http@v6.1.12",
+            "UID": "467dc7922baff9ed"
+          },
+          "InstalledVersion": "v6.1.12",
+          "FixedVersion": "5.4.0, 5.4.52, 7.1.0, 7.3.0, 7.4.0, 3.0.0, 6.3.0, 8.0.12, 5.3.0, 6.2.0, 7.4.12, 4.0.0, 6.1.0, 6.4.0, 6.4.40, 7.2.0, 5.0.0, 5.1.0, 5.2.0",
+          "Status": "fixed",
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-45063",
+          "DataSource": {
+            "ID": "php-security-advisories",
+            "Name": "PHP Security Advisories Database",
+            "URL": "https://github.com/FriendsOfPHP/security-advisories"
+          },
+          "Fingerprint": "sha256:ff6e2456179c41699e1b7d403e789624bbb5cba07fffbd673636b264df2872b9",
+          "Title": "Symfony is a PHP framework for web and console applications and a set  ...",
+          "Description": "Symfony is a PHP framework for web and console applications and a set of reusable PHP components. Prior to 5.4.52, 6.4.40, 7.4.12, and 8.0.12, X509Authenticator extracts the user identifier from $_SERVER['SSL_CLIENT_S_DN'] with an unanchored regex that matches emailAddress= anywhere in the distinguished name, allowing an attacker with a trusted certificate containing emailAddress=victim inside another RDN value such as CN to authenticate as the victim. This issue is fixed in versions 5.4.52, 6.4.40, 7.4.12, and 8.0.12.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-290"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3,
+            "nvd": 4
+          },
+          "CVSS": {
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N",
+              "V40Score": 8.7
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 9.1
+            }
+          },
+          "References": [
+            "https://github.com/FriendsOfPHP/security-advisories/blob/master/symfony/security-http/CVE-2026-45063.yaml",
+            "https://github.com/FriendsOfPHP/security-advisories/blob/master/symfony/symfony/CVE-2026-45063.yaml",
+            "https://github.com/symfony/symfony",
+            "https://github.com/symfony/symfony/commit/59ef484029601a7af06f5e06c6ed921fdcea5a0d",
+            "https://github.com/symfony/symfony/commit/ccb3f724c7ff55670a6fe3521c7bf1514cceb478",
+            "https://github.com/symfony/symfony/releases/tag/v5.4.52",
+            "https://github.com/symfony/symfony/releases/tag/v6.4.40",
+            "https://github.com/symfony/symfony/releases/tag/v7.4.12",
+            "https://github.com/symfony/symfony/releases/tag/v8.0.12",
+            "https://github.com/symfony/symfony/security/advisories/GHSA-ph86-p8f6-f9r2",
+            "https://symfony.com/cve-2026-45063"
+          ],
+          "PublishedDate": "2026-07-14T19:17:05.62Z",
+          "LastModifiedDate": "2026-07-15T15:01:08.077Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-48489",
+          "PkgID": "symfony/security-http@v6.1.12",
+          "PkgName": "symfony/security-http",
+          "PkgIdentifier": {
+            "PURL": "pkg:composer/symfony/security-http@v6.1.12",
+            "UID": "467dc7922baff9ed"
+          },
+          "InstalledVersion": "v6.1.12",
+          "FixedVersion": "5.1.0, 5.2.0, 6.1.0, 6.3.0, 7.4.0, 4.0.0, 5.0.0, 6.2.0, 7.2.0, 3.0.0, 5.4.53, 6.4.0, 7.4.13, 8.0.13, 5.3.0, 5.4.0, 6.4.41, 7.1.0, 7.3.0",
+          "Status": "fixed",
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-48489",
+          "DataSource": {
+            "ID": "php-security-advisories",
+            "Name": "PHP Security Advisories Database",
+            "URL": "https://github.com/FriendsOfPHP/security-advisories"
+          },
+          "Fingerprint": "sha256:5b093b7bed9b44225998c903bcfa79848c88de88e5886825a7d8f701d25685c5",
+          "Title": "Symfony is a PHP framework for web and console applications and a set  ...",
+          "Description": "Symfony is a PHP framework for web and console applications and a set of reusable PHP components. Prior to 5.4.53, 6.4.41, 7.4.13, and 8.0.13, DefaultAuthenticationFailureHandler honored the request-supplied _failure_path parameter when failure_forward: true was enabled, allowing an unauthenticated failing login request to dispatch a subrequest to access_control-protected GET routes that skipped firewall listeners. This issue is fixed in versions 5.4.53, 6.4.41, 7.4.13, and 8.0.13.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-863"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3,
+            "nvd": 3
+          },
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://github.com/FriendsOfPHP/security-advisories/blob/master/symfony/security-http/CVE-2026-48489.yaml",
+            "https://github.com/FriendsOfPHP/security-advisories/blob/master/symfony/symfony/CVE-2026-48489.yaml",
+            "https://github.com/symfony/symfony",
+            "https://github.com/symfony/symfony/commit/c48a4276309e11aedeeb0ce3a89dfbf0b4fe04ff",
+            "https://github.com/symfony/symfony/releases/tag/v5.4.53",
+            "https://github.com/symfony/symfony/releases/tag/v6.4.41",
+            "https://github.com/symfony/symfony/releases/tag/v7.4.13",
+            "https://github.com/symfony/symfony/security/advisories/GHSA-6h46-9jf5-q59x",
+            "https://symfony.com/cve-2026-48489"
+          ],
+          "PublishedDate": "2026-07-14T20:17:09.33Z",
+          "LastModifiedDate": "2026-07-16T15:16:31.97Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-45133",
+          "PkgID": "symfony/yaml@v6.1.11",
+          "PkgName": "symfony/yaml",
+          "PkgIdentifier": {
+            "PURL": "pkg:composer/symfony/yaml@v6.1.11",
+            "UID": "3aeb46d99adbaba5"
+          },
+          "InstalledVersion": "v6.1.11",
+          "FixedVersion": "7.4.0, 7.4.12, 5.3.0, 6.2.0, 7.1.0, 4.0.0, 5.0.0, 5.1.0, 5.4.0, 6.1.0, 6.3.0, 7.3.0, 6.4.0, 8.0.12, 3.0.0, 5.2.0, 5.4.52, 6.4.40, 7.2.0",
+          "Status": "fixed",
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-45133",
+          "DataSource": {
+            "ID": "php-security-advisories",
+            "Name": "PHP Security Advisories Database",
+            "URL": "https://github.com/FriendsOfPHP/security-advisories"
+          },
+          "Fingerprint": "sha256:c120e4f112324df897e165b2c062c242ca7a1036e685940391d6357d45c14c44",
+          "Title": "Symfony is a PHP framework for web and console applications and a set  ...",
+          "Description": "Symfony is a PHP framework for web and console applications and a set of reusable PHP components. Prior to 5.4.52, 6.4.40, 7.4.12, and 8.0.12, when the parser is exposed to attacker-controlled input, deeply nested mappings or sequences cause both the block-level (Parser::parseBlock()) and inline (Inline::parseSequence() / Inline::parseMapping()) parsers to recurse without a depth limit. A crafted document exhausts the PHP stack and crashes the worker. This issue is fixed in versions 5.4.52, 6.4.40, 7.4.12, and 8.0.12.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-674",
+            "CWE-776",
+            "CWE-1333"
+          ],
+          "VendorSeverity": {
+            "ghsa": 1,
+            "nvd": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:U",
+              "V40Score": 2.7
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://github.com/FriendsOfPHP/security-advisories/blob/master/symfony/symfony/CVE-2026-45133.yaml",
+            "https://github.com/FriendsOfPHP/security-advisories/blob/master/symfony/yaml/CVE-2026-45133.yaml",
+            "https://github.com/symfony/symfony",
+            "https://github.com/symfony/symfony/commit/914f427ed9630ddb3904dafba763e53d9f133fe3",
+            "https://github.com/symfony/symfony/releases/tag/v5.4.52",
+            "https://github.com/symfony/symfony/releases/tag/v6.4.40",
+            "https://github.com/symfony/symfony/releases/tag/v7.4.12",
+            "https://github.com/symfony/symfony/releases/tag/v8.0.12",
+            "https://github.com/symfony/symfony/security/advisories/GHSA-c2p3-7m5p-cv8x",
+            "https://symfony.com/cve-2026-45133"
+          ],
+          "PublishedDate": "2026-07-14T19:17:06.913Z",
+          "LastModifiedDate": "2026-07-15T14:54:50.237Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-45304",
+          "PkgID": "symfony/yaml@v6.1.11",
+          "PkgName": "symfony/yaml",
+          "PkgIdentifier": {
+            "PURL": "pkg:composer/symfony/yaml@v6.1.11",
+            "UID": "3aeb46d99adbaba5"
+          },
+          "InstalledVersion": "v6.1.11",
+          "FixedVersion": "5.3.0, 6.1.0, 6.4.0, 8.0.12, 6.2.0, 6.3.0, 7.4.12, 4.0.0, 5.0.0, 5.1.0, 5.2.0, 7.3.0, 7.4.0, 3.0.0, 5.4.0, 5.4.52, 6.4.40, 7.1.0, 7.2.0",
+          "Status": "fixed",
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-45304",
+          "DataSource": {
+            "ID": "php-security-advisories",
+            "Name": "PHP Security Advisories Database",
+            "URL": "https://github.com/FriendsOfPHP/security-advisories"
+          },
+          "Fingerprint": "sha256:a5f694d9dc5a18f1660fd635faca4de49c28444024a438c3374b595548bccc67",
+          "Title": "Symfony is a PHP framework for web and console applications and a set  ...",
+          "Description": "Symfony is a PHP framework for web and console applications and a set of reusable PHP components. Prior to 5.4.52, 6.4.40, 7.4.12, and 8.0.12, Symfony\\Component\\Yaml\\Parser resolved YAML collection aliases recursively, allowing a small untrusted YAML input to expand into a multi-gigabyte structure and exhaust memory. This issue is fixed in versions 5.4.52, 6.4.40, 7.4.12, and 8.0.12.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-776"
+          ],
+          "VendorSeverity": {
+            "ghsa": 1,
+            "nvd": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:U",
+              "V40Score": 2.7
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://github.com/FriendsOfPHP/security-advisories/blob/master/symfony/symfony/CVE-2026-45304.yaml",
+            "https://github.com/FriendsOfPHP/security-advisories/blob/master/symfony/yaml/CVE-2026-45304.yaml",
+            "https://github.com/symfony/symfony",
+            "https://github.com/symfony/symfony/commit/e77391b2e4f18821198f010d573674c8ed4a970a",
+            "https://github.com/symfony/symfony/releases/tag/v5.4.52",
+            "https://github.com/symfony/symfony/releases/tag/v6.4.40",
+            "https://github.com/symfony/symfony/releases/tag/v7.4.12",
+            "https://github.com/symfony/symfony/releases/tag/v8.0.12",
+            "https://github.com/symfony/symfony/security/advisories/GHSA-4qpc-3hr4-r2p4",
+            "https://symfony.com/cve-2026-45304"
+          ],
+          "PublishedDate": "2026-07-14T19:17:07.05Z",
+          "LastModifiedDate": "2026-07-15T14:55:30.25Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-45305",
+          "PkgID": "symfony/yaml@v6.1.11",
+          "PkgName": "symfony/yaml",
+          "PkgIdentifier": {
+            "PURL": "pkg:composer/symfony/yaml@v6.1.11",
+            "UID": "3aeb46d99adbaba5"
+          },
+          "InstalledVersion": "v6.1.11",
+          "FixedVersion": "6.4.0, 5.1.0, 7.4.12, 8.0.12, 3.0.0, 5.2.0, 5.4.0, 7.4.0, 4.0.0, 5.0.0, 5.3.0, 6.4.40, 7.2.0, 7.3.0, 7.1.0, 5.4.52, 6.1.0, 6.2.0, 6.3.0",
+          "Status": "fixed",
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-45305",
+          "DataSource": {
+            "ID": "php-security-advisories",
+            "Name": "PHP Security Advisories Database",
+            "URL": "https://github.com/FriendsOfPHP/security-advisories"
+          },
+          "Fingerprint": "sha256:3c8deab4b0918beef657366bf1ca793de6a2dcc6908667255ed84caad2f5e4a6",
+          "Title": "Symfony is a PHP framework for web and console applications and a set  ...",
+          "Description": "Symfony is a PHP framework for web and console applications and a set of reusable PHP components. Prior to 5.4.52, 6.4.40, 7.4.12, and 8.0.12, Symfony\\Component\\Yaml\\Parser::cleanup() used regular expressions with overlapping quantifiers for YAML directive, comment, and document marker cleanup, allowing crafted input to make parsing hang for an arbitrarily long time. This issue is fixed in versions 5.4.52, 6.4.40, 7.4.12, and 8.0.12.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-1333"
+          ],
+          "VendorSeverity": {
+            "ghsa": 1,
+            "nvd": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:U",
+              "V40Score": 2.7
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://github.com/FriendsOfPHP/security-advisories/blob/master/symfony/symfony/CVE-2026-45305.yaml",
+            "https://github.com/FriendsOfPHP/security-advisories/blob/master/symfony/yaml/CVE-2026-45305.yaml",
+            "https://github.com/symfony/symfony",
+            "https://github.com/symfony/symfony/commit/9749cd43c5e09b3735093623670b21b9d8a056cb",
+            "https://github.com/symfony/symfony/releases/tag/v5.4.52",
+            "https://github.com/symfony/symfony/releases/tag/v6.4.40",
+            "https://github.com/symfony/symfony/releases/tag/v7.4.12",
+            "https://github.com/symfony/symfony/releases/tag/v8.0.12",
+            "https://github.com/symfony/symfony/security/advisories/GHSA-9frc-8383-795m",
+            "https://symfony.com/cve-2026-45305"
+          ],
+          "PublishedDate": "2026-07-14T19:17:07.187Z",
+          "LastModifiedDate": "2026-07-15T14:57:02.81Z"
+        }
+      ]
+    }
+  ]
+}
